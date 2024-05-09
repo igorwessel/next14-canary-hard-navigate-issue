@@ -1,11 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build"
+    "dev": "NODE_ENV=development node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "^14.3.0-canary.51",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

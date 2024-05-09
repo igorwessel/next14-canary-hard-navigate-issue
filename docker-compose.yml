@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    container_name: nextjs-web
+    hostname: nextjs-web
+    ports:
+      - 3000:3000
+    networks:
+      - nextjs_net
+networks:
+  nextjs_net:
+    name: nextjs_net
