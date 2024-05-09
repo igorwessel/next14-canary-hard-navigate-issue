@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function PageOne() {
+export default function Page() {
   return (
     <div>
       <Head>
-        <title>Page 1</title>
+        <title>Page without Prefetch</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -21,7 +21,7 @@ export default function PageOne() {
   );
 }
 
-PageOne.getInitialProps = async () => {
+Page.getInitialProps = async () => {
   await new Promise((resolve) => {
     setTimeout(resolve, 300);
   });

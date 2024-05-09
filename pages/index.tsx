@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
+/** Add your relevant code here for the issue to reproduce */
 export default function Home() {
   return (
     <div>
@@ -15,10 +16,10 @@ export default function Home() {
               <Link href="/">Current Page</Link>
             </li>
             <li>
-              <Link href="/page1">Another Page</Link>
+              <Link href="/page-with-prefetch">Page with prefetch</Link>
             </li>
             <li>
-              <Link href="/page2" prefetch={false}>
+              <Link href="/page-without-prefetch" prefetch={false}>
                 Page without prefetch
               </Link>
             </li>
